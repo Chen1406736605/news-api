@@ -51,5 +51,6 @@ dependencies {
     compile 'cn.hutool:hutool-all:4.1.19'
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.38'
     compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'
+    compile group: 'org.springframework.security', name: 'spring-security-core', version: '5.1.1.RELEASE'
 
 }

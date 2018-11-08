@@ -1,4 +1,4 @@
-package cn.chen.newsapi.generator
+package cn.chen.newsapi.util
 
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException
 import com.baomidou.mybatisplus.core.toolkit.StringUtils
@@ -48,11 +48,10 @@ object CodeGenerator {
 
         // 数据源配置
         val dsc = DataSourceConfig()
-        dsc.url = "jdbc:mysql://localhost:3306/news?useUnicode=true&useSSL=false&characterEncoding=utf8"
-        // dsc.setSchemaName("public");
+        dsc.url = "jdbc:mysql://192.168.0.4:3306/news?useUnicode=true&useSSL=false&characterEncoding=utf8"
         dsc.driverName = "com.mysql.jdbc.Driver"
-        dsc.username = "debian-sys-maint"
-        dsc.password = "Yxie52uGiMHYw5jE"
+        dsc.username = "root"
+        dsc.password = "TaiBang0810"
         mpg.dataSource = dsc
 
         // 包配置
@@ -67,7 +66,6 @@ object CodeGenerator {
         strategy.columnNaming = NamingStrategy.underline_to_camel
         strategy.isRestControllerStyle = true
         strategy.setInclude(scanner("表名"))
-        strategy.setSuperEntityColumns("id")
         strategy.isControllerMappingHyphenStyle = true
         strategy.setTablePrefix(pc.moduleName + "_")
         mpg.strategy = strategy
