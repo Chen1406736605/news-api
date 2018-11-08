@@ -30,7 +30,7 @@ class ChannelController {
     @Autowired
     var channelMapping: ChannelMapper? = null
 
-    @GetMapping("/system-init/channel")
+    @GetMapping("system-init/channel")
     fun SystemInit(): List<Channel>? {
 
         return channelMapping!!.selectList(QueryWrapper())
