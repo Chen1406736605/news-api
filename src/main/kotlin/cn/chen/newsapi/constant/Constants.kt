@@ -1,10 +1,10 @@
-package cn.chen.newsapi.util
+package cn.chen.newsapi.constant
 
 /**
  * @author chen
  * @date 2018/11/8 13:08
  */
-class Gv {
+class Constants {
 
     companion object {
 

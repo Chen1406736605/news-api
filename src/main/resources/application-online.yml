@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  address: 127.0.0.1
+
+spring:
+  datasource:
+    url: jdbc:mysql://120.78.217.100:3306/news?useUnicode=true&useSSL=false&characterEncoding=utf8
+    username: root
+    password: Czc2538755682
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 120.78.217.100
+    port: 6379
+    password: Czc2538755682
